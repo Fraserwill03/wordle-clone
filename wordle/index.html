@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="spacer"></div>
+      <div class="page-title">Wordle</div>
+      <div class="menu">
+        <ul>
+          <li id="dark-mode-button">&#9681;</li>
+          <li id="hint-button">&#63;</li>
+          <li id="instructions">&#9432;</li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div id="split-screen" class="center">
+      <div id="game">
+        <div id="win-gif" class="hidden">
+          <img src="win-gif.gif" alt="win gif" />
+        </div>
+      </div>
+      </div>
+      <div id="instruction-page" class="hidden">
+        <h3>How to play</h3>
+        <ul>
+          <li>Start typing.The letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green backrounds are in the right spot</li>
+          <li>Letters with yellow backgrounds exist in the word, but are in the wrong spot</li>
+          <li>Letters with gray backrounds do not exist in the word</li>
+          <li>If you need a hint, click the <strong>?</strong> icon</li>
+        </ul>
+      </div>
+    </div>
+    <footer id="footer"><p>&#169 William Fraser 2023</p></footer>
+    <script src="./wordle.js"></script>
+  </body>
+</html>
